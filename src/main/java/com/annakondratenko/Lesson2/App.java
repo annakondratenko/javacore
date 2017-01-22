@@ -1,4 +1,4 @@
-package com.annakondratenko.javacore;
+package com.annakondratenko.Lesson2;
 
 /**
  * Hello world!
