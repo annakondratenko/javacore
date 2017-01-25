@@ -1,4 +1,4 @@
-package com.annakondratenko.Lesson2;
+package com.annakondratenko.app.classwork.Lesson2;
 
 /**
  * Created by annak on 19.01.2017.

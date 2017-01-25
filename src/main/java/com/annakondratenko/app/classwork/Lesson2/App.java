@@ -1,4 +1,4 @@
-package com.annakondratenko.Lesson2;
+package com.annakondratenko.app.classwork.Lesson2;
 
 /**
  * Hello world!
