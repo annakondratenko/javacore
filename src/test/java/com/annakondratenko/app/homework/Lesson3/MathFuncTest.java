@@ -91,5 +91,13 @@ public class MathFuncTest {
         Assert.assertEquals(false, mathFunc.biggerThanZero(a));
 
     }
+    @Test
+    public void addLongAndInt (){
+        MathFunc mathFunc = new MathFunc();
+        long a = 3L;
+        int b = 2;
+        Assert.assertEquals(5L, mathFunc.addLongAndInt(3L,2));
+
+    }
 
 }

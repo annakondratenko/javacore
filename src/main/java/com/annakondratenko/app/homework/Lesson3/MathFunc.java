@@ -56,7 +56,7 @@ public class MathFunc {
         public long addLongAndInt (long a, int b) {
             return a+b;
         }
-        public double dividelongAndDouble (long a, double b) {
+        public float divideFloats (float a, float b) {
             return a/b;
         }
         public String AddSpaceAndEMToEnd (String a){
