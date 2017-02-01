@@ -1,0 +1,6 @@
+parameterA,expectedResult
+1,true
+0,false
+10,true
+111,true
+-111,false

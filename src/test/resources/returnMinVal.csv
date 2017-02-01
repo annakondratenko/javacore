@@ -1,0 +1,5 @@
+parameterA,parameterB,expectedResult
+12,1,1
+10,0,0
+111,150,111
+-96,-94,-96

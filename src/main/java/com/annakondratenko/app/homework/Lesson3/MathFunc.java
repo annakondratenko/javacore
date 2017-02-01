@@ -66,5 +66,29 @@ public class MathFunc {
         public long deductTwoLong (long a, long b) {
             return a-b;
         }
+
+        public int absoluteValue (int a){
+            int absVal = Math.abs(a);
+            return absVal;
+        }
+
+        public double roundingUp (double a){
+        double integerVal = Math.ceil(a);
+        return integerVal;
+        }
+
+        public int returnMaxVal (int a,int b){
+        int maxVal = Math.max(a,b);
+        return maxVal;
+        }
+
+        public int returnMinVal (int a,int b){
+        int minVal = Math.min(a,b);
+        return minVal;
+    }
+    public double raiseFirstInt (int a, int b){
+        double raisedVal = Math.pow(a,b);
+        return raisedVal;
+    }
     }
 

@@ -71,7 +71,7 @@ public class MathFuncTest {
     }
 
     @Test
-    public void isNotEmptyTrue () {
+    public void   True () {
         MathFunc mathFunc = new MathFunc();
         int a = mathFunc.multiplyTwoInt(1,1);
         Assert.assertEquals(true, mathFunc.isNotEmpty(a));
