@@ -4,7 +4,6 @@ package com.annakondratenko.app.classwork.Lesson2;
  * Created by annak on 19.01.2017.
  */
 public class WideningCasting {
-    //correct conversion 64f<=32f<=64<=32<=16<=8
     private short short1;
     private int int1;
     private long long1;
@@ -16,13 +15,4 @@ public class WideningCasting {
         System.out.println(double1);
         return double1;
     }
-
-
-
-
-
-
-
-
-
 }

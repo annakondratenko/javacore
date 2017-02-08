@@ -16,7 +16,7 @@ public class AskForNumber {
        //int b = 10;
         while (a>b){
             a=a-1;
-            System.out.println (a+" is a " + b +" is b ");
+            System.out.println (a+" is a " + b +" is b \n ");
         }
         if (a<=b) {
             System.out.println (a+" is a " + b +" is b ");

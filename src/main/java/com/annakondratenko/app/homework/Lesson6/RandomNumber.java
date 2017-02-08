@@ -6,17 +6,17 @@ import java.util.Random;
  * Created by annak on 05.02.2017.
  */
 public class RandomNumber {
-    public static void evenElementsAmount() {
+    public void evenElementsAmount() {
         //int[] array = {1, 3, 5, 3, 6, 8, 3, 3, 4, 2, 7, 8, 9, 0, 0};
 
         // create empty array with length 15
         int[] array = new int[15];
-
+        this.simpleRandomArray(0,9, array);
         // fill out array with random values
-        for (int i=0;i<array.length;i++){
+        /*for (int i=0;i<array.length;i++){
             Random rand = new Random();  // create object rand
             array[i] = rand.nextInt(9)+0; //9 is the maximum and the 0 is our minimum
-        }
+        }*/
 
         System.out.println(" ");
 
@@ -39,20 +39,21 @@ public class RandomNumber {
 
 
     }
-    public static void maxAndMinArrayElement(){
+    public void maxAndMinArrayElement(){
         //int[] array = {1, 3, 5, 3, 6, 8, 3, 3, 4, 2, 7, 8, 9, 98, 999};
 
 
         // step 1 create empty array with length 15
         int[] array = new int[15];
+        this.simpleRandomArray(0,999,array);
 
         // step 2 fill out array with random values
-        for (int i=0;i<array.length;i++){
+        /*for (int i=0;i<array.length;i++){
             // create object rand
             Random rand = new Random();
             // rewrite elements with random value
             array[i] = rand.nextInt(999);
-        }
+        }*/
 
 
 
@@ -80,7 +81,7 @@ public class RandomNumber {
         }
         System.out.println("\n The minimum val: " + minVal);
     }
-    public static void twoDimensionalArray(){
+    public void twoDimensionalArray(){
 /*        int[][] array ={
                 {10,16,18,19,20},
                 {20,23,24,27,29},
@@ -92,11 +93,12 @@ public class RandomNumber {
                 {90,98,97,91,99}
 
         };*/
-        // step 0 create object rand
-        Random rand = new Random();
         // step 1 create empty two dimensional array with length 8X5
         int[][] array = new int[8][5];
+        //this.multidimensionalRandomArray(10,99,array);
 
+        // step 0 create object rand
+        Random rand = new Random();
         // step 2 go through array and randomize all values
         for(int j=0; j<array.length; j++){
             System.out.println(" ");
@@ -116,5 +118,25 @@ public class RandomNumber {
 
         }
 
+    }
+    public void simpleRandomArray(int minArrayVal, int maxArrayVal,int[] arr){
+        // fill out array with random values
+        for (int i=0;i<arr.length;i++){
+            Random rand = new Random();  // create object rand
+            // maxArrayVal is the maximum and the minArrayVal is our minimum
+            arr[i] = rand.nextInt(maxArrayVal)+minArrayVal;
+        }
+    }
+
+    public void multidimensionalRandomArray(int minArrayVal, int maxArrayVal, int[][] arr){
+        // step 0 create object rand
+        Random rand = new Random();
+        // step 2 go through array and randomize all values
+        for(int j=0; j<arr.length; j++){
+            System.out.println(" ");
+            for (int k=0; k<arr[j].length; k++){
+                arr[j][k]=rand.nextInt(maxArrayVal)+minArrayVal;
+            }
+        }
     }
 }

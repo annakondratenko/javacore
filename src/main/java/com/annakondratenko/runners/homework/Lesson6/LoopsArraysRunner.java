@@ -1,11 +1,8 @@
 package com.annakondratenko.runners.homework.Lesson6;
 
-import com.annakondratenko.app.classwork.Lesson4.*;
 import com.annakondratenko.app.homework.Lesson6.OddArray;
 import com.annakondratenko.app.homework.Lesson6.PrintEvenRange;
 import com.annakondratenko.app.homework.Lesson6.RandomNumber;
-import com.annakondratenko.runners.homework.Lesson4.Lesson4Runner;
-
 import java.util.Scanner;
 
 /**
@@ -13,9 +10,10 @@ import java.util.Scanner;
  */
 public class LoopsArraysRunner {
     public static void main (String args[]) {
-        LoopsArraysRunner.runLoopApp();
+        LoopsArraysRunner loopsArraysRunner = new LoopsArraysRunner();
+        loopsArraysRunner.runLoopApp();
     }
-        public static void runLoopApp() {
+        public void runLoopApp() {
             String methodNumber = "";
             while (!methodNumber.equals("*")) {
                 Scanner scanner = new Scanner(System.in);
@@ -29,21 +27,23 @@ public class LoopsArraysRunner {
                         " 6 Press * for exit");
                 System.out.println("Enter a number from menu to run the program...");
                 methodNumber = scanner.nextLine();
+                RandomNumber randomNumber = new RandomNumber();
                 switch (methodNumber) {
                     case "1":
                         OddArray.printOddDigits();
                         break;
                     case "2":
-                        PrintEvenRange.printEvenFromArray();
+                    PrintEvenRange printEvenRange = new PrintEvenRange();
+                        printEvenRange.printEvenFromArray();
                         break;
                     case "3":
-                        RandomNumber.evenElementsAmount();
+                        randomNumber.evenElementsAmount();
                         break;
                     case "4":
-                        RandomNumber.maxAndMinArrayElement();
+                        randomNumber.maxAndMinArrayElement();
                         break;
                     case "5":
-                        RandomNumber.twoDimensionalArray();
+                        randomNumber.twoDimensionalArray();
                         break;
                     case "*":
                         System.out.println("\nYou are successfully left an app.\n");

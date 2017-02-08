@@ -12,4 +12,4 @@ public class NarrowingCasting {
         System.out.println(int1);
         return int1;
     }
-    }
+}

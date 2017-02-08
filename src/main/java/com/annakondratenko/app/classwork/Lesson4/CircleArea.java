@@ -53,4 +53,9 @@ public class CircleArea {
             System.out.print("Area1 is smaller. ");
         }
     }
-    }
+   /* public static double scannerDoubleVar (double doubleVar){
+        Scanner scanner = new Scanner(System.in);
+        double returnVal = scanner.nextDouble();
+        return returnVal;
+    }*/
+}

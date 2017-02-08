@@ -8,11 +8,11 @@ import com.annakondratenko.app.homework.Lesson6.RandomNumber;
  */
 public class ArraysRunner {
     public static void main(String[] args){
-        //PrintEvenRange evenRangePrinting = new PrintEvenRange();
-        //evenRangePrinting.printEvenFromArray();
+        PrintEvenRange evenRangePrinting = new PrintEvenRange();
+        evenRangePrinting.printEvenFromArray();
         RandomNumber randomNumber = new RandomNumber();
-        //randomNumber.evenElementsAmount();
-       // randomNumber.maxAndMinArrayElement();
+        randomNumber.evenElementsAmount();
+        randomNumber.maxAndMinArrayElement();
         randomNumber.twoDimensionalArray();
 
     }

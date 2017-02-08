@@ -7,6 +7,7 @@ import com.annakondratenko.app.classwork.Lesson4.AppSelector;
  */
 public class AppSelectorRunner {
     public static void main (String args []) {
-        AppSelector.appSelector();
+        AppSelector appSelector = new AppSelector();
+        appSelector.appSelector();
     }
 }

@@ -30,8 +30,6 @@ public class PrintDigits {
             System.out.print(" a is " + a );
             ++a;
         }
-
-
     }
 
 }

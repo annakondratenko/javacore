@@ -9,9 +9,10 @@ import java.util.Scanner;
  */
 public class Lesson4Runner {
     public static void main (String args[]) {
-        Lesson4Runner.runApp();
+        Lesson4Runner lesson4Runner = new Lesson4Runner();
+        lesson4Runner.runApp();
     }
-    public static void  runApp () {
+    public  void runApp () {
         String methodNumber = "";
         while (!methodNumber.equals("*")){
             Scanner scanner = new Scanner(System.in);
@@ -41,7 +42,8 @@ public class Lesson4Runner {
                     CircleArea.calculateSize();
                     break;
                 case "5":
-                    AppSelector.appSelector();
+                    AppSelector appSelector = new AppSelector();
+                    appSelector.appSelector();
                     break;
                 case "6":
                     RightAngledTriangle.triangleCalculations();
@@ -59,6 +61,5 @@ public class Lesson4Runner {
             }
         }
     }
-
 }
 

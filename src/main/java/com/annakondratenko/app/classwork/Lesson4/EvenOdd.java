@@ -6,9 +6,6 @@ import java.util.Scanner;
  * Created by annak on 26.01.2017.
  */
 public class EvenOdd {
-    public static void main(String[] args) {
-        checkEvenVoid();
-    }
     public static void checkEvenVoid (){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Type a value");

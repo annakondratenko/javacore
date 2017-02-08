@@ -19,5 +19,5 @@ public class WhatIsBigger {
                 } else
                         System.out.println("Digit2 is bigger");
         }
-        }
+}
 

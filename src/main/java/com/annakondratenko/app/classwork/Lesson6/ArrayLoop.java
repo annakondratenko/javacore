@@ -54,13 +54,11 @@ public class ArrayLoop {
             for (int k=0; k<intArray[j].length; k++){
 
                 System.out.println(intArray[j][k]);
-
             }
-
         }
+
         int[] copyTo = new int[3];
         System.arraycopy(intArray2,1,copyTo,0,2);
         System.out.println(copyTo);
     }
-
 }
