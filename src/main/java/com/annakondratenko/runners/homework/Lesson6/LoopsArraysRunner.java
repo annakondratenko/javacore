@@ -48,6 +48,9 @@ public class LoopsArraysRunner {
                     case "*":
                         System.out.println("\nYou are successfully left an app.\n");
                         break;
+                    case "-1":
+                        System.out.println("\nNegative values are not acceptable.\n");
+                        break;
                     default:
                         System.out.println("Wrong input value. Choose one of proposed values.\n");
                         break;

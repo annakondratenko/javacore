@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Created by annak on 29.01.2017.
  */
 public class AppSelector {
-    public static int appSelector() {
+    public int appSelector() {
         int digit123=0;
         while (digit123!=4){
         Scanner scanner = new Scanner(System.in);

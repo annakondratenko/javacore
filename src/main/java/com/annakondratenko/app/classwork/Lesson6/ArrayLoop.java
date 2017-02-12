@@ -26,6 +26,7 @@ public class ArrayLoop {
         double[] arrDouble={1.2,5.8,8.5,6.9};
         for (int i=0;i<arrDouble.length; i++) {
             System.out.println(arrDouble[i]);
+            Arrays.sort(arrDouble);
         }
 
         long[] arrLong={1,5,18,85};

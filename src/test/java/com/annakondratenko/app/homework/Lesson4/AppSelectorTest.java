@@ -16,10 +16,11 @@ import static org.junit.Assert.*;
 public class AppSelectorTest {
     @Test
     public void appSelector4() {
+        AppSelector appSelector = new AppSelector();
         String input = "4";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
-        Assert.assertEquals(4, AppSelector.appSelector());
+        Assert.assertEquals(4, appSelector.appSelector());
     }
 
 

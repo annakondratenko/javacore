@@ -1,6 +1,7 @@
 package com.annakondratenko.app.homework.Lesson6;
 
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created by annak on 05.02.2017.
@@ -130,12 +131,14 @@ public class RandomNumber {
 
     public void multidimensionalRandomArray(int minArrayVal, int maxArrayVal, int[][] arr){
         // step 0 create object rand
-        Random rand = new Random();
+        ///Random rand = new Random();
+
         // step 2 go through array and randomize all values
         for(int j=0; j<arr.length; j++){
             System.out.println(" ");
             for (int k=0; k<arr[j].length; k++){
-                arr[j][k]=rand.nextInt(maxArrayVal)+minArrayVal;
+                arr[j][k] = ThreadLocalRandom.current().nextInt(minArrayVal,maxArrayVal);
+                ///arr[j][k]=rand.nextInt(maxArrayVal)+minArrayVal;
             }
         }
     }

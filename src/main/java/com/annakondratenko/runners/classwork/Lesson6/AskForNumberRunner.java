@@ -9,5 +9,6 @@ public class AskForNumberRunner {
     public static void main (String args[]){
         AskForNumber askForNumber = new AskForNumber();
         askForNumber.aAndBInput();
+
     }
     }
