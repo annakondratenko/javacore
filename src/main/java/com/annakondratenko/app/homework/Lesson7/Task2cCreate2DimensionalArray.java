@@ -5,7 +5,7 @@ import com.annakondratenko.app.homework.Lesson6.RandomNumber;
 /**
  * Created by annak on 12.02.2017.
  */
-public class Task2c_Create2DimensionalArray {
+public class Task2cCreate2DimensionalArray {
     public int maxTwoDimensionalValueFinder(int[][]arr){
         int maxVal = arr[0][0];
         for(int j=0; j<arr.length; j++){

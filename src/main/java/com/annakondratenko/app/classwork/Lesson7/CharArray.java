@@ -12,6 +12,6 @@ public class CharArray {
             arr[i] = (char)i;
         }
         System.out.println("Char array: " + Arrays.toString(arr));
-        return arr.length;
+        return n;
     }
 }

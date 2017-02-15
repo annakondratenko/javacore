@@ -2,7 +2,7 @@ package com.annakondratenko.runners.homework.Lesson7;
 
 import com.annakondratenko.app.homework.Lesson6.RandomNumber;
 import com.annakondratenko.app.homework.Lesson7.ArrayPrint;
-import com.annakondratenko.app.homework.Lesson7.Task2c_Create2DimensionalArray;
+import com.annakondratenko.app.homework.Lesson7.Task2cCreate2DimensionalArray;
 
 /**
  * Created by annak on 12.02.2017.
@@ -17,7 +17,7 @@ public class Task2c_Create2DimensionalArrayRunner {
         randomNumber.multidimensionalRandomArray(minArrVal, maxArrVal, array);
         ArrayPrint arrayPrint = new ArrayPrint();
         arrayPrint.printTwoDimensionalArray(array, entryVal);
-        Task2c_Create2DimensionalArray task2c_create2DimensionalArray = new Task2c_Create2DimensionalArray();
+        Task2cCreate2DimensionalArray task2c_create2DimensionalArray = new Task2cCreate2DimensionalArray();
         task2c_create2DimensionalArray.maxTwoDimensionalValueFinder(array);
         task2c_create2DimensionalArray.minTwoDimensionalValueFinder(array);
 

@@ -7,9 +7,9 @@ import java.util.Scanner;
 /**
  * Created by annak on 29.01.2017.
  */
-public class Lesson4Runner {
+public class HomeTask4 {
     public static void main (String args[]) {
-        Lesson4Runner lesson4Runner = new Lesson4Runner();
+        HomeTask4 lesson4Runner = new HomeTask4();
         lesson4Runner.runApp();
     }
     public  void runApp () {
