@@ -4,7 +4,7 @@ package com.annakondratenko.app.homework.Lesson7;
  * Created by annak on 12.02.2017.
  */
 public class TwoBubbleSortTypes {
-    public int[] aTOzBubbleSorting (int[]array){
+    public int[] aTOzBubbleSorting(int[] array) {
         int n = array.length;
         int temp = 0;
         for (int i = 0; i < n; i++) {
@@ -19,7 +19,8 @@ public class TwoBubbleSortTypes {
         }
         return array;
     }
-    public int[] zTOaBubbleSorting (int[]array){
+
+    public int[] zTOaBubbleSorting(int[] array) {
         int n = array.length;
         int temp = 0;
         for (int i = 0; i < n; i++) {
@@ -33,6 +34,6 @@ public class TwoBubbleSortTypes {
             }
         }
 
-       return array;
+        return array;
     }
 }

@@ -1,6 +1,5 @@
 package com.annakondratenko.app.classwork.Lesson8;
 
-import java.util.Arrays;
 
 /**
  * Created by annak on 13.02.2017.

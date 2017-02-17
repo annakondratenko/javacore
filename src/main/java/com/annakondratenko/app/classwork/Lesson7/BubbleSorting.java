@@ -1,7 +1,5 @@
 package com.annakondratenko.app.classwork.Lesson7;
 
-import java.util.Arrays;
-
 /**
  * Created by annak on 09.02.2017.
  */
@@ -19,7 +17,6 @@ public class BubbleSorting {
                 }
             }
         }
-       // System.out.println("Sorted array:"+Arrays.toString(numArray));
-        return n ;
+        return n;
     }
 }

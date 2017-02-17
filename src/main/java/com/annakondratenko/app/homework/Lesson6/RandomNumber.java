@@ -8,16 +8,11 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class RandomNumber {
     public void evenElementsAmount() {
-        //int[] array = {1, 3, 5, 3, 6, 8, 3, 3, 4, 2, 7, 8, 9, 0, 0};
 
         // create empty array with length 15
         int[] array = new int[15];
         this.simpleRandomArray(0, 9, array);
         // fill out array with random values
-        /*for (int i=0;i<array.length;i++){
-            Random rand = new Random();  // create object rand
-            array[i] = rand.nextInt(9)+0; //9 is the maximum and the 0 is our minimum
-        }*/
 
         System.out.println(" ");
 
