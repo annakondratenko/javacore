@@ -11,12 +11,10 @@ public class IsPalindromeOrNot {
             isPalindrome = isPalindrome && (val.charAt(i) == val.charAt(val.length() - i - 1));
         }
 
-        if (isPalindrome)
+        if (isPalindrome) {
             System.out.println("Palindrome");
-
-        else
+        } else
             System.out.println("Not palindrome");
         return isPalindrome;
     }
-
 }

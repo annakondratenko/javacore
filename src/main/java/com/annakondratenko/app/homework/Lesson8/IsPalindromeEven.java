@@ -4,8 +4,11 @@ package com.annakondratenko.app.homework.Lesson8;
 /**
  * Created by annak on 15.02.2017.
  */
-public class IsPalindromeHome {
-    public boolean IsPalindromeHome(String val) {
+public class IsPalindromeEven {
+    private String even = "The word is a Palindrome";
+    private String odd = "The word is not a Palindrome";
+
+    public boolean IsPalindromeStandard(String val) {
         String valDown = val.toLowerCase();
         boolean isPalindrome = true;
 
@@ -13,15 +16,15 @@ public class IsPalindromeHome {
             isPalindrome = isPalindrome && (valDown.charAt(i) == valDown.charAt(valDown.length() - i - 1));
         }
 
-        if (isPalindrome)
-            System.out.println("The word is a Palindrome");
+        if (isPalindrome) {
+            System.out.println(even);
 
-        else
-            System.out.println("The word is not a Palindrome");
+        } else
+            System.out.println(odd);
         return isPalindrome;
     }
 
-    public void IsPalindromeHome2(String val) {
+    public void IsPalindromeFoundInWeb(String val) {
         String valUp = val.toUpperCase();
         int length = valUp.length();
         int i, begin, end, middle;
@@ -39,20 +42,20 @@ public class IsPalindromeHome {
             }
         }
         if (i == middle + 1) {
-            System.out.println("The word is a Palindrome");
+            System.out.println(even);
         } else {
-            System.out.println("The word is not a Palindrome");
+            System.out.println(odd);
         }
     }
 
-    public boolean IsPalindromeHome3(String val) {
+    public boolean IsPalindromeEvenFoundInWeb(String val) {
         boolean isPalindrome;
         String reverse = new StringBuffer(val).reverse().toString();
         isPalindrome = reverse.equalsIgnoreCase(val);
         if (isPalindrome) {
-            System.out.println("The word is a Palindrome");
+            System.out.println(even);
         } else {
-            System.out.println("The word is not a Palindrome");
+            System.out.println(odd);
         }
         return isPalindrome;
     }
@@ -64,13 +67,13 @@ public class IsPalindromeHome {
 
         builder.reverse();
 
-        if (valUp.equals(builder.toString()))
+        if (valUp.equals(builder.toString())) {
 
-            System.out.println("Palindrome");
+            System.out.println(even);
 
-        else
+        } else
 
-            System.out.println("Not palindrome");
+            System.out.println(odd);
     }
 
 }

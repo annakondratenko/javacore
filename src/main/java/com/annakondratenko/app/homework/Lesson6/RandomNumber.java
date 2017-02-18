@@ -8,7 +8,6 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class RandomNumber {
     public void evenElementsAmount() {
-
         // create empty array with length 15
         int[] array = new int[15];
         this.simpleRandomArray(0, 9, array);
@@ -20,7 +19,6 @@ public class RandomNumber {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
-
 
         //count even amount in array
         int result = 0;
@@ -37,21 +35,17 @@ public class RandomNumber {
     }
 
     public void maxAndMinArrayElement() {
-        //int[] array = {1, 3, 5, 3, 6, 8, 3, 3, 4, 2, 7, 8, 9, 98, 999};
-
 
         // step 1 create empty array with length 15
         int[] array = new int[15];
         this.simpleRandomArray(0, 999, array);
-
+        // create object rand
+        Random rand = new Random();
         // step 2 fill out array with random values
-        /*for (int i=0;i<array.length;i++){
-            // create object rand
-            Random rand = new Random();
+        for (int i = 0; i < array.length; i++) {
             // rewrite elements with random value
             array[i] = rand.nextInt(999);
-        }*/
-
+        }
 
         // step 3 Print array elements
         for (int i = 0; i < array.length; i++) {
@@ -78,23 +72,11 @@ public class RandomNumber {
     }
 
     public void twoDimensionalArray() {
-/*        int[][] array ={
-                {10,16,18,19,20},
-                {20,23,24,27,29},
-                {31,33,35,37,39},
-                {52,54,55,56,59},
-                {60,61,63,65,66},
-                {76,78,77,78,70},
-                {88,87,89,86,85},
-                {90,98,97,91,99}
-
-        };*/
-        // step 1 create empty two dimensional array with length 8X5
-        int[][] array = new int[8][5];
-        //this.multidimensionalRandomArray(10,99,array);
-
         // step 0 create object rand
         Random rand = new Random();
+        // step 1 create empty two dimensional array with length 8X5
+        int[][] array = new int[8][5];
+
         // step 2 go through array and randomize all values
         for (int j = 0; j < array.length; j++) {
             System.out.println(" ");
@@ -107,7 +89,6 @@ public class RandomNumber {
         for (int j = 0; j < array.length; j++) {
             System.out.println(" ");
             for (int k = 0; k < array[j].length; k++) {
-
                 System.out.print(array[j][k] + " ");
 
             }
@@ -118,8 +99,8 @@ public class RandomNumber {
 
     public void simpleRandomArray(int minArrayVal, int maxArrayVal, int[] arr) {
         // fill out array with random values
+        Random rand = new Random();  // create object rand
         for (int i = 0; i < arr.length; i++) {
-            Random rand = new Random();  // create object rand
             // maxArrayVal is the maximum and the minArrayVal is our minimum
             arr[i] = rand.nextInt(maxArrayVal) + minArrayVal;
         }

@@ -11,10 +11,10 @@ public class ArrayPrint {
     }
 
     public void printTwoDimensionalArray(int[][] arr, String name) {
+        System.out.println(name);
         for (int j = 0; j < arr.length; j++) {
             System.out.println(" ");
             for (int k = 0; k < arr[j].length; k++) {
-
                 System.out.print(arr[j][k] + " ");
 
             }

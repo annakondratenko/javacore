@@ -6,7 +6,7 @@ package com.annakondratenko.app.classwork.Lesson7;
 public class BubbleSorting {
     public int bubbleSort(int[] numArray) {
         int n = numArray.length;
-        int temp = 0;
+        int temp;
         for (int i = 0; i < n; i++) {
             for (int j = 1; j < (n - i); j++) {
 
