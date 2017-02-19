@@ -4,7 +4,7 @@ package com.annakondratenko.app.classwork.Lesson9;
  * Created by annak on 16.02.2017.
  */
 public class SubstitutionCipher {
-    public void subs(String password) {
+    public void substituteSymbol(String password) {
         System.out.print("Return Value :");
         System.out.println(password.replace('a', 'T'));
 
@@ -12,7 +12,7 @@ public class SubstitutionCipher {
         System.out.println(password.replace('d', 'D'));
     }
 
-    public String subst(String password) {
+    public String substituteWord(String password) {
 
         String from = "abcdefghijklmnopqrstuvwxyz";
 

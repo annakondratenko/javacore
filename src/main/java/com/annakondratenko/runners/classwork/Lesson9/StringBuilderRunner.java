@@ -9,9 +9,9 @@ public class StringBuilderRunner {
     public static void main(String[] args) {
         String testWord = "unfortunately";
         StringBuilderWrapper stringBuilder = new StringBuilderWrapper();
-        /*stringBuilder.measureStringBuilderPerformance();
-        stringBuilder.appendStringBuider();
-        stringBuilder.editStringBuilder(testWord);*/
+        stringBuilder.measureStringBuilderPerformance();
+        stringBuilder.appendStringBuilder();
+        stringBuilder.editStringBuilder(testWord);
         stringBuilder.charArrayToString();
     }
 }

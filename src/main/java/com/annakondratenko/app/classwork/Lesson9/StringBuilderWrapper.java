@@ -21,7 +21,7 @@ public class StringBuilderWrapper {
         System.out.println(end - start);
     }
 
-    public void appendStringBuider() {
+    public void appendStringBuilder() {
         String end = " new ending";
         StringBuilder builder = new StringBuilder("start of phrase+ ");
 

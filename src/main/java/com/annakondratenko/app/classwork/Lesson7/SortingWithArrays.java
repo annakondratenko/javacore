@@ -10,9 +10,7 @@ public class SortingWithArrays {
 
         Arrays.sort(array);
 
-        System.out.println("Sorted array:" +
-
-                Arrays.toString(array));
+        System.out.println("Sorted array:" + Arrays.toString(array));
         return array.length;
 
     }

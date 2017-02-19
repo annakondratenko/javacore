@@ -9,8 +9,8 @@ public class SubstitutionCipherRunner {
     public static void main(String[] args) {
         String val = "ass";
         SubstitutionCipher substitutionCipher = new SubstitutionCipher();
-        //substitutionCipher.subs(val);
-        substitutionCipher.subst(val);
+        substitutionCipher.substituteSymbol(val);
+        substitutionCipher.substituteWord(val);
 
     }
 }
