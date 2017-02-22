@@ -5,8 +5,8 @@ package com.annakondratenko.app.homework.Lesson8;
  * Created by annak on 15.02.2017.
  */
 public class IsPalindromeEven {
-    private String even = "The word is a Palindrome";
-    private String odd = "The word is not a Palindrome";
+    private String even = "The word is a Palindrome ";
+    private String odd = "The word is not a Palindrome ";
 
     public boolean IsPalindromeStandard(String val) {
         String valDown = val.toLowerCase();
@@ -17,10 +17,10 @@ public class IsPalindromeEven {
         }
 
         if (isPalindrome) {
-            System.out.println(even);
+            System.out.println(even + valDown);
 
         } else
-            System.out.println(odd);
+            System.out.println(odd + valDown);
         return isPalindrome;
     }
 
