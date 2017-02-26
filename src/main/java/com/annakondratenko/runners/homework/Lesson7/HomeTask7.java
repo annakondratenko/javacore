@@ -4,8 +4,6 @@ import com.annakondratenko.app.homework.Lesson7.ArrayPrint;
 import com.annakondratenko.app.homework.Lesson7.SelectionSort;
 import com.annakondratenko.app.homework.Lesson7.Task2cCreate2DimensionalArray;
 import com.annakondratenko.app.homework.Lesson7.TwoBubbleSortTypes;
-import com.annakondratenko.runners.homework.Lesson6.HomeTask6;
-
 import java.util.Scanner;
 
 /**

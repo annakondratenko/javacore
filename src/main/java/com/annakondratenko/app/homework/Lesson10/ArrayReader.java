@@ -14,9 +14,10 @@ public class ArrayReader {
 
     public void toReadFileWithDigitsArray() {
         String line;
+        String fileReader = "D:\\TestFiles\\input.txt";
         try {
             BufferedReader reader = new BufferedReader(
-                    new FileReader("D:\\TestFiles\\input.txt")
+                    new FileReader(fileReader)
             );
 
             while ((line = reader.readLine()) != null) {

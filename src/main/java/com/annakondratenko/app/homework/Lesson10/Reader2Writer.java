@@ -12,15 +12,16 @@ public class Reader2Writer {
 
     public void readInputFile() throws FileNotFoundException {
         boolean isPalindrome;
-
+        String pathToFileReader = "D:\\TestFiles\\palindromeTextOrNot.txt";
+        String pathToFileWriter = "D:\\TestFiles\\output.txt";
         try {
             IsPalindromeEven isPalindromeEven = new IsPalindromeEven();
             BufferedReader reader = new BufferedReader(
-                    new FileReader("D:\\TestFiles\\palindromeTextOrNot.txt")
+                    new FileReader(pathToFileReader)
             );
 
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
-                    new FileOutputStream("D:\\TestFiles\\output.txt")));
+                    new FileOutputStream(pathToFileWriter)));
             while ((line = reader.readLine()) != null) {
                 isPalindrome = isPalindromeEven.IsPalindromeStandard(line);
                 if (isPalindrome) {
