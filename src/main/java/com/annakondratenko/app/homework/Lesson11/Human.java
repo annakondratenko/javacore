@@ -1,6 +1,5 @@
 package com.annakondratenko.app.homework.Lesson11;
 
-import static jdk.internal.org.objectweb.asm.commons.GeneratorAdapter.AND;
 
 /**
  * Created by annak on 25.02.2017.
@@ -19,7 +18,7 @@ public class Human {
     }
 
     public int getAge() {
-        return  age;
+        return age;
     }
 
     public void setAge(int age) {

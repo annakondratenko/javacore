@@ -1,6 +1,8 @@
 package com.annakondratenko.runners.homework.Lesson11;
+
 import com.annakondratenko.app.homework.Lesson11.Human;
 import com.annakondratenko.app.homework.Lesson11.WhiteCollar;
+
 import java.util.Scanner;
 
 /**
@@ -28,12 +30,12 @@ public class HomeTask11 {
                     Human human = new Human("Bibik", 0);
                     human.setAge(30);
                     System.out.println("name " + human.getName());
-                    System.out.println("age "+human.getAge());
+                    System.out.println("age " + human.getAge());
 
                     break;
                 case "2":
-                    WhiteCollar whiteCollar = new WhiteCollar("Anita",0,"Kindergaten");
-                    whiteCollar.setCompany("Offi22ce");
+                    WhiteCollar whiteCollar = new WhiteCollar("Anita", 28, "Kindergaten");
+                    whiteCollar.setCompany("SuperCompany");
                     break;
 
                 case "*":

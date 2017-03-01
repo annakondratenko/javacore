@@ -12,6 +12,7 @@ public class WhiteCollar extends Human {
         super(name, age);
         this.sname = name;
         this.sage = age;
+        companyName = company;
     }
 
     public void setCompany(String company) {
@@ -24,6 +25,6 @@ public class WhiteCollar extends Human {
                 break;
             }
         }
-        System.out.println(companyName);
+        System.out.println("New company name is " + companyName + "\nAge is " + sage + "\nName is " + sname);
     }
 }

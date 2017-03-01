@@ -10,7 +10,7 @@ public class HumanRunner {
         Human human = new Human("Bibik", 0);
         human.setAge(30);
         System.out.println("name " + human.getName());
-        System.out.println("age "+human.getAge());
+        System.out.println("age " + human.getAge());
 
     }
 }
