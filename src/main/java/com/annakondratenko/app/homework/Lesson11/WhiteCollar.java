@@ -4,14 +4,10 @@ package com.annakondratenko.app.homework.Lesson11;
  * Created by annak on 26.02.2017.
  */
 public class WhiteCollar extends Human {
-    private String sname;
-    private int sage;
     private String companyName;
 
     public WhiteCollar(String name, int age, String company) {
         super(name, age);
-        this.sname = name;
-        this.sage = age;
         companyName = company;
     }
 
@@ -25,6 +21,6 @@ public class WhiteCollar extends Human {
                 break;
             }
         }
-        System.out.println("New company name is " + companyName + "\nAge is " + sage + "\nName is " + sname);
+        System.out.println("New company name is " + companyName + "\nAge is " + age + "\nName is " + name);
     }
 }

@@ -5,8 +5,8 @@ package com.annakondratenko.app.homework.Lesson11;
  * Created by annak on 25.02.2017.
  */
 public class Human {
-    private String name;
-    private int age;
+    protected String name;
+    protected int age;
 
     public Human(String name, int age) {
         this.name = name;
