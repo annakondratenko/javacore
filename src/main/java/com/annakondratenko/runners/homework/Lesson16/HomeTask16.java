@@ -1,20 +1,20 @@
-package com.annakondratenko.runners.homework.Lesson11;
+package com.annakondratenko.runners.homework.Lesson16;
 
-import com.annakondratenko.app.homework.Lesson11.Human;
-import com.annakondratenko.app.homework.Lesson11.WhiteCollar;
+import com.annakondratenko.app.homework.Lesson16.WhichAge;
 import com.annakondratenko.runners.homework.Lesson14.Numbers;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by annak on 26.02.2017.
+ * Created by annak on 12.03.2017.
  */
-public class HomeTask11 {
+public class HomeTask16 {
     public static void main(String[] args) {
-        HomeTask11 loopsArraysRunner = new HomeTask11();
+        HomeTask16 loopsArraysRunner = new HomeTask16();
         loopsArraysRunner.runLoopApp();
     }
+
 
     public void runLoopApp() {
         String methodNumber = "";
@@ -23,29 +23,20 @@ public class HomeTask11 {
             System.out.println("All available enum: " + Arrays.toString(Numbers.values()));
             System.out.println("\n" +
                     "Menu: \n" +
-                    " 1 Run Human class\n" +
-                    " 2 Run WhiteCollar class\n" +
+                    " Run the \"famous people's age\" quiz by entering \"ONE\" \n" +
+
                     " Enter EXIT  for exit");
-            System.out.println("Enter a number from menu to run the program...");
             methodNumber = scanner.nextLine();
             try {
                 Numbers number = Numbers.valueOf(methodNumber);
                 switch (number) {
                     case ONE:
-                        Human human = new Human("Bibik", 0);
-                        human.setAge(30);
-                        System.out.println("name " + human.getName());
-                        System.out.println("age " + human.getAge());
-
+                        WhichAge whichAge = new WhichAge();
+                        whichAge.guessAge();
                         break;
-                    case TWO:
-                        WhiteCollar whiteCollar = new WhiteCollar("Anita", 28, "Kindergaten");
-                        whiteCollar.setCompany("SuperCompany");
-                        break;
-
                     case EXIT:
                         System.out.println("\nYou are successfully left an app.\n");
-                        break;
+                        return;
                     default:
                         System.out.println("Wrong input value. Choose one of proposed values.\n");
                         break;
