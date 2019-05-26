@@ -12,6 +12,7 @@ public class HomeTask2 {
         char cVal = primitiveConvertor.floatToChar(33f);
         int iVal = primitiveConvertor.charToInt('#');
         char cVal1 = primitiveConvertor.intToChar(62);
+        int intValue = primitiveConvertor.doubleToInt(3.4);
 
     WideningCasting wdnCast  = new WideningCasting();
     byte sendByte1 = 3;

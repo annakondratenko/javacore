@@ -80,6 +80,7 @@ public class MathFunc {
 
     public int absoluteValue(int a) {
         int absVal = Math.abs(a);
+        System.out.println("Abs val is " + absVal);
         return absVal;
     }
 

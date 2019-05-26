@@ -23,4 +23,10 @@ public class PrimitiveConvertor {
         return iVar2;
     }
 
+    public int doubleToInt(double doubleValue){
+         int newInt = (int) doubleValue;
+        System.out.println("Input double " + doubleValue+ ". Output int is "+ newInt);
+        return newInt;
+    }
+
 }
